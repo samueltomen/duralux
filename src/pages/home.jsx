@@ -14,8 +14,8 @@ const Home = () => {
           {/*<SiteOverviewStatistics />*/}
           <ProjectDateLineMiscellaneous title="Ticketing" viewOptions={true} />
           <ProjectDateLineMiscellaneous title="Supervision" />
-          <PaymentRecordChart />
-          <DeviceUseChart />
+          <PaymentRecordChart title="CMDB" />
+          <DeviceUseChart title="Type de CI" />
 
           {/*<SalesMiscellaneous isFooterShow={true} dataList={projectsDataTwo} />*/}
           {/*<TasksOverviewChart />*/}

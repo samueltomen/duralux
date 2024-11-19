@@ -32,6 +32,12 @@ const projectData = [
 ];
 
 const ProjectDateLineMiscellaneous = ({ title, viewOptions }) => {
+  const [viewSelected, setViewSelected] = React.useState("Views Options");
+
+  function handleViewChange(view) {
+    setViewSelected(view);
+  }
+
   return (
     <div className="col-12">
       <div className="card stretch stretch-full">
@@ -41,7 +47,7 @@ const ProjectDateLineMiscellaneous = ({ title, viewOptions }) => {
               <h5 className="mb-1">{title}</h5>
             </div>
             {viewOptions && (
-              <div className="dropdown">
+              <div className="dropdown mx-5">
                 <button
                   className="btn btn-light-brand dropdown-toggle"
                   type="button"
@@ -49,19 +55,27 @@ const ProjectDateLineMiscellaneous = ({ title, viewOptions }) => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  View Options
+                  {viewSelected}
                 </button>
                 <ul
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >
                   <li>
-                    <Link className="dropdown-item" to="#">
-                      All
+                    <Link
+                      className="dropdown-item"
+                      to="#"
+                      onClick={() => handleViewChange("View All")}
+                    >
+                      View All
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <Link
+                      className="dropdown-item"
+                      to="#"
+                      onClick={() => handleViewChange("Pilotage")}
+                    >
                       Pilotage
                     </Link>
                   </li>
@@ -118,6 +132,7 @@ const ProjectDateLineMiscellaneous = ({ title, viewOptions }) => {
 // Pour la validations des props :
 ProjectDateLineMiscellaneous.propTypes = {
   title: PropTypes.string.isRequired,
+  viewOptions: PropTypes.bool,
 };
 
 export default ProjectDateLineMiscellaneous;
