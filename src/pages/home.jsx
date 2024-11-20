@@ -11,23 +11,10 @@ const Home = () => {
       <PageHeader></PageHeader>
       <div className="main-content">
         <div className="row">
-          {/*<SiteOverviewStatistics />*/}
           <ProjectDateLineMiscellaneous title="Ticketing" viewOptions={true} />
           <ProjectDateLineMiscellaneous title="Supervision" />
           <PaymentRecordChart title="CMDB" />
           <DeviceUseChart title="Type de CI" />
-
-          {/*<SalesMiscellaneous isFooterShow={true} dataList={projectsDataTwo} />*/}
-          {/*<TasksOverviewChart />*/}
-          {/*<LeadsOverviewChart chartHeight={315} />*/}
-          {/*<LatestLeads title={"Latest Leads"} />*/}
-          {/*<Schedule title={"Upcoming Schedule"} />*/}
-          {/*<Project*/}
-          {/*  cardYSpaceClass="hrozintioal-card"*/}
-          {/*  borderShow={true}*/}
-          {/*  title="Project Status"*/}
-          {/*/>*/}
-          {/*<TeamProgress title={"Team Progress"} footerShow={true} />*/}
         </div>
       </div>
       <Footer />

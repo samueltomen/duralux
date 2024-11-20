@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import SocilMediaStatistics from "@/components/widgetsStatistics/SocilMediaStatistics.jsx";
-import EstimateStatistics from "@/components/widgetsStatistics/EstimateStatistics.jsx";
 
 const projectData = [
   {
@@ -121,7 +120,6 @@ const ProjectDateLineMiscellaneous = ({ title, viewOptions }) => {
             {/*  ),*/}
             {/*)}*/}
             <SocilMediaStatistics />
-            <EstimateStatistics />
           </div>
         </div>
       </div>
