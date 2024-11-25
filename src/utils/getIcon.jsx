@@ -35,6 +35,7 @@ import {
   FiActivity,
   FiAirplay,
   FiAlertCircle,
+  FiAlertTriangle,
   FiArchive,
   FiArrowDown,
   FiArrowUp,
@@ -216,6 +217,8 @@ const getIcon = (name) => {
       return <FiPower />;
     case "feather-alert-circle":
       return <FiAlertCircle />;
+    case "feather-alert-triangle":
+      return <FiAlertTriangle />;
     case "feather-layout":
       return <FiLayout />;
     case "feather-send":
